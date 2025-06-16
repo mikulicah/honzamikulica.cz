@@ -22,7 +22,7 @@ body {
   justify-content: space-between;
   align-items: center;
   z-index: 1000; /* aby zůstal nad ostatním obsahem */
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  /*box-shadow: 0 2px 4px rgba(0,0,0,0.1);*/
 }
 
 section {
@@ -38,38 +38,7 @@ section {
   overflow-y: auto;
   background-color: rgb(249, 251, 252);
   padding: 20px;
-  box-shadow: 2px 0 4px rgba(0,0,0,0.05);
-}
-
-.sidebar nav ul {
-  list-style-type: none;
-  padding: 0;  
-}
-
-.sidebar nav ul a {
-  color: rgb(121, 171, 214);
-  padding-left:16px;
-  text-decoration: none;
-  font-family: 'Oswald', sans-serif;
-  font-weight: 600;
-  font-style: normal;
-  font-size: 20px;
-}
-
-.sidebar nav ul a:hover {
-  color: rgb(69, 114, 146);
-}
-
-.sidebar {
-  position: fixed;
-  top: 60px; /* stejné jako výška headeru */
-  left: 0;
-  width: 250px; /* pevná šířka */
-  height: calc(100% - 60px); /* zbytek výšky okna */
-  overflow-y: auto;
-  background-color: rgb(249, 251, 252);
-  padding: 20px;
-  box-shadow: 2px 0 4px rgba(0,0,0,0.05);
+  /*box-shadow: 2px 0 4px rgba(0,0,0,0.05);*/
 }
 
 .sidebar nav ul {
