@@ -1,0 +1,338 @@
+body {
+  background-color: rgb(249, 251, 252);
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+  background-color: rgb(249, 251, 252);
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px; /* nastav výšku podle potřeby */
+  background-color: rgb(249, 251, 252);
+  padding: 10px 20px;
+  text-align: left;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000; /* aby zůstal nad ostatním obsahem */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+section {
+  display: flex;
+}
+
+.sidebar {
+  position: fixed;
+  top: 60px; /* stejné jako výška headeru */
+  left: 0;
+  width: 250px; /* pevná šířka */
+  height: calc(100% - 60px); /* zbytek výšky okna */
+  overflow-y: auto;
+  background-color: rgb(249, 251, 252);
+  padding: 20px;
+  box-shadow: 2px 0 4px rgba(0,0,0,0.05);
+}
+
+.sidebar nav ul {
+  list-style-type: none;
+  padding: 0;  
+}
+
+.sidebar nav ul a {
+  color: rgb(121, 171, 214);
+  padding-left:16px;
+  text-decoration: none;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.sidebar nav ul a:hover {
+  color: rgb(69, 114, 146);
+}
+
+.sidebar {
+  position: fixed;
+  top: 60px; /* stejné jako výška headeru */
+  left: 0;
+  width: 250px; /* pevná šířka */
+  height: calc(100% - 60px); /* zbytek výšky okna */
+  overflow-y: auto;
+  background-color: rgb(249, 251, 252);
+  padding: 20px;
+  box-shadow: 2px 0 4px rgba(0,0,0,0.05);
+}
+
+.sidebar nav ul {
+  list-style-type: none;
+  padding: 0;  
+}
+
+.sidebar nav ul a {
+  color: rgb(121, 171, 214);
+  padding-left:16px;
+  text-decoration: none;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.sidebar nav ul a:hover {
+  color: rgb(69, 114, 146);
+}
+
+button {
+  background-color: rgb(249, 251, 252);
+  border: none;
+  color: rgb(121, 171, 214);
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  text-align: justify;
+  padding-left:16px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.footer {
+  padding: 0px;
+  text-align: left;
+  color: rgb(121, 171, 214);
+  font-family:'Courier New', Courier, monospace;
+  font-size: 14px;
+  text-decoration: none;  
+  color: rgb(0, 0, 0);
+  padding: 3px;
+  cursor: default;
+}
+
+.body {
+  margin-left: 250px; /* stejné jako šířka sidebaru */
+  margin-top: 60px; /* stejné jako výška headeru */
+  padding: 20px;
+  flex: 1;
+}
+
+
+h1 {
+  color: rgb(121, 171, 214);
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 34px;
+}
+
+h2 {
+  color: rgb(121, 171, 214);
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 28px;
+}
+
+h3 {
+  color: rgb(121, 171, 214);
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 22px;
+}
+
+p {
+  color: rgb(121, 171, 214);
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 18px;
+  text-align: justify;
+  width: 90%;
+}
+
+p a{
+  background-color: rgb(249, 251, 252);
+  color: rgb(121, 171, 214);
+  text-decoration: none;
+  font-family: 'Times New Roman', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+p a:hover{
+  background-color: rgb(249, 251, 252);
+  color: rgb(69, 114, 146);
+  text-decoration: none;
+  font-family: 'Times New Roman', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+p.Familyforall {
+  color: black;
+  font-family:'Courier New', Courier, monospace;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 14px;
+  text-align: center;
+  width: 90%;
+}
+
+.bio-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.bio-image {
+  max-width: 400px;
+  width: 100%;
+  height:auto;
+  float: right;    
+  margin: 0px 50px 0px 50px;
+  padding: 0px 50px 25px 50px;
+}
+
+.bio-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px; /* mezera mezi ikonami */
+  margin: 30px 0;
+}
+
+.icon {
+  max-width: 100px;
+  width: 100%;
+  height: auto;
+}
+
+iframe {
+    aspect-ratio: 16 / 9;
+    width: 80% !important;
+}
+
+.mySlides {
+  margin: 0 0 0 4em;
+  width: 87%;
+}
+
+.burger {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+
+.lang { 
+  display: none; 
+}
+
+.lang.active { 
+  display: block; 
+}
+
+
+#lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+#lightbox.hidden {
+  display: none;
+}
+
+#lightbox img {
+  max-width: 90%;
+  max-height: 80%;
+}
+#close, #prev, #next {
+  position: absolute;
+  color: white;
+  font-size: 2em;
+  cursor: pointer;
+  user-select: none;
+  background-color: rgba(0,0,0,0.2); /* tmavý průhledný podklad */
+  padding: 5px 5px;
+  border-radius: 15%;
+}
+#close {
+  top: 20px;
+  right: 30px;
+}
+#prev, #next {
+  top: 50%;
+  transform: translateY(-50%);
+}
+#prev { left: 5px; }
+#next { right: 5px; }
+
+@media (max-width: 600px) {
+section {
+  flex-direction: column;
+  }
+
+.header {
+  position: static;
+  justify-content: center;
+  }
+.burger {
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  }
+
+.sidebar {
+  position: static;
+  width: 100%;
+  height: auto;
+  display: none;
+  }
+
+.sidebar.active {
+  display: block;
+  text-align: center;
+  }
+
+.body {
+  margin: 0px 20px 20px 20px;
+  padding: 60px 0px 0px 0px;
+  text-align: center
+  }
+
+.footer {
+  text-align: center;
+}
+
+p {
+  padding: 0px 0px 0px 30px;
+  text-align: justify;
+  width: 90%;
+}
+
+}

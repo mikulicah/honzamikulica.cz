@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <title>HM - TEST</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="mystyle.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="parent">
+    <div class="header">
+      <div id="header"></div>
+    </div>
+
+    <section>
+      <div class="sidebar" id="sidebar"></div>
+      <div class="body">
+        <div id="cs" class="lang">
+        <img class="mySlides" src="img/home/case.jpg"                   alt="Case" title="Case" ></a>
+        <img class="mySlides" src="img/home/sea.jpg"                    alt="Sea" title="Sea" ></a>
+        <img class="mySlides" src="img/home/001.dym05.jpg"              alt="dym_05" title="dym_05" ></a>
+        <img class="mySlides" src="img/home/002.emoce04.jpg"            alt="emoce_04" title="emoce_04" ></a>
+        <img class="mySlides" src="img/home/neon_04.jpg"                alt="neon_04" title="neon_04" ></a>
+        <img class="mySlides" src="img/home/004.fshopgram04.jpg"        alt="fshopgram_04" title="fshopgram_04" ></a>
+        <img class="mySlides" src="img/home/005.psyche07.jpg"           alt="psychedelique_07" title="psychedelique_07" ></a>
+        <img class="mySlides" src="img/home/005.psyche09.jpg"           alt="psychedelique_09" title="psychedelique_09" ></a>
+        <img class="mySlides" src="img/home/007.blechy04.jpg"           alt="blechy_04" title="blechy_04" ></a>
+        <img class="mySlides" src="img/home/008.kytice03.jpg"           alt="kytice_03" title="kytice_03" ></a>
+        <img class="mySlides" src="img/home/001.klouby02.jpg"           alt="klouby_02" title="klouby_02" ></a>
+        <img class="mySlides" src="img/home/003.pastvina02.jpg"         alt="pastvina_02" title="pastvina_02" ></a>
+        <img class="mySlides" src="img/home/002.sphera06.jpg"           alt="sphera_06" title="sphera_06" ></a>
+        <img class="mySlides" src="img/home/001.mylittleabortion09.jpg" alt="mylittleabortion_09" title="mylittleabortion_09" ></a>
+        <img class="mySlides" src="img/home/IMG_2009.jpeg"              alt="IMG_2009" title="IMG_2009" ></a>
+        <img class="mySlides" src="img/home/IMG_2184.jpeg"              alt="IMG_2184" title="IMG_2184" ></a>
+        <img class="mySlides" src="img/home/puffsbackgrounds01.jpg"     alt="puffsbackgrounds01" title="puffsbackgrounds01" ></a>
+        </div>
+        <div id="en" class="lang">
+        <h1>TEST - Welcome</h1>
+        <p>This is the English version of the website.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="footer" id="footer"></div>
+  </div>
+
+  <div id="lightbox" class="hidden">
+  <span id="close">&times;</span>
+  <img id="lightbox-img" src="">
+  <div id="prev">&#10094;</div>
+  <div id="next">&#10095;</div>
+  </div>
+
+  <script src="myScript.js">
+
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 2500); // Change image every 2 seconds
+        }
+        </script>
+  </script>
+</body>
+</html>
