@@ -155,6 +155,10 @@ p.Familyforall {
   width: 90%;
 }
 
+abbr{
+  text-decoration: none;
+}
+
 .bio-section {
   display: flex;
   flex-wrap: wrap;
