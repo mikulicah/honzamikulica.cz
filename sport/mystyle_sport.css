@@ -213,6 +213,10 @@ i {
   border: 1px solid #3c3c3c;
   }
 
+abbr{
+  text-decoration: none;
+}
+
 .bio-section {
   display: flex;
   flex-wrap: wrap;
