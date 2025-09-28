@@ -14,10 +14,8 @@ body {
   left: 0;
   right: 0;
   height: 80px; /* nastav výšku podle potřeby */
-  background-color: rgb(249, 251, 252);
   padding: 10px 20px;
   text-align: left;
-  color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -29,6 +27,41 @@ section {
   display: flex;
 }
 
+@font-face {
+  font-family: "TWKEverett-Extrabold";
+  src: url("fonts/TWKEverett-Extrabold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TWKEverett-Bold";
+  src: url("fonts/TWKEverett-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Pilowlava-Regular";
+  src: url("fonts/Pilowlava-Regular.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Calendar_plus";
+  src: url("fonts/Calendas_plus.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Savate";
+  src: url("fonts/Savate.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .sidebar {
   position: fixed;
   top: 60px; /* stejné jako výška headeru */
@@ -36,7 +69,6 @@ section {
   width: 250px; /* pevná šířka */
   height: calc(100% - 60px); /* zbytek výšky okna */
   overflow-y: auto;
-  background-color: rgb(249, 251, 252);
   padding: 20px;
   /*box-shadow: 2px 0 4px rgba(0,0,0,0.05);*/
 }
@@ -47,40 +79,45 @@ section {
 }
 
 .sidebar nav ul a {
-  color: rgb(121, 171, 214);
+  color: rgb(45, 45, 45);
   padding-left:16px;
   text-decoration: none;
-  font-family: 'Oswald', sans-serif;
-  font-weight: 600;
-  font-style: normal;
-  font-size: 20px;
+  font-family: "TWKEverett-Extrabold", sans-serif;
+  font-size: 18px;
 }
 
 .sidebar nav ul a:hover {
-  color: rgb(69, 114, 146);
+  color: rgb(130, 130, 130);
 }
 
 button {
-  background-color: rgb(249, 251, 252);
   border: none;
-  color: rgb(121, 171, 214);
-  font-family: 'Oswald', sans-serif;
-  font-weight: 600;
-  font-style: normal;
+  color: rgb(45, 45, 45);
+  font-family: "TWKEverett-Extrabold", sans-serif;
   text-align: justify;
   padding-left:16px;
-  font-size: 20px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+button:hover {
+  border: none;
+  color: rgb(130, 130, 130);
+  font-family: "TWKEverett-Extrabold", sans-serif;
+  text-align: justify;
+  padding-left:16px;
+  font-size: 18px;
   cursor: pointer;
 }
 
 .footer {
   padding: 0px;
   text-align: left;
-  color: rgb(121, 171, 214);
-  font-family:'Courier New', Courier, monospace;
+  font-family:'Savate', sans-serif;
+  font-weight: 500;
   font-size: 14px;
   text-decoration: none;  
-  color: rgb(0, 0, 0);
+  color: rgb(45, 45, 45);
   padding: 3px;
   cursor: default;
 }
@@ -94,55 +131,42 @@ button {
 
 
 h1 {
-  color: rgb(121, 171, 214);
-  font-family: 'Oswald', sans-serif;
-  font-weight: 600;
-  font-style: normal;
+  color: rgb(45, 45, 45);
+  font-family: "TWKEverett-Extrabold", sans-serif;
   font-size: 34px;
 }
 
 h2 {
-  color: rgb(121, 171, 214);
-  font-family: 'Oswald', sans-serif;
-  font-weight: 500;
-  font-style: normal;
+  color: rgb(45, 45, 45);
+  font-family: "TWKEverett-Bold", sans-serif;
   font-size: 28px;
 }
 
 h3 {
-  color: rgb(121, 171, 214);
-  font-family: 'Oswald', sans-serif;
-  font-weight: 500;
-  font-style: normal;
+  color: rgb(45, 45, 45);
+  font-family: "TWKEverett-Bold", sans-serif;
   font-size: 22px;
 }
 
 p {
-  color: rgb(121, 171, 214);
-  font-family: 'Times New Roman', Times, serif;
-  font-weight: 200;
-  font-style: normal;
+  color: rgb(45, 45, 45);
+  font-family: 'Calendar_plus', serif;
   font-size: 18px;
   text-align: justify;
   width: 90%;
 }
 
 p a{
-  background-color: rgb(249, 251, 252);
-  color: rgb(121, 171, 214);
+  color: rgb(45, 45, 45);
   text-decoration: none;
-  font-family: 'Times New Roman', sans-serif;
+  font-family: 'Calendar_plus', serif;
   font-weight: 600;
-  font-style: normal;
 }
 
 p a:hover{
-  background-color: rgb(249, 251, 252);
-  color: rgb(69, 114, 146);
+  color: rgb(130, 130, 130);
   text-decoration: none;
-  font-family: 'Times New Roman', sans-serif;
-  font-weight: 600;
-  font-style: normal;
+  font-family: 'Calendar_plus', serif;
 }
 
 p.Familyforall {
