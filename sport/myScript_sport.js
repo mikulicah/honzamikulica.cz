@@ -11,6 +11,13 @@ fetch('header.html')
         document.getElementById('sidebar').classList.toggle('active');
       });
     }
+
+    const burger2 = document.getElementById('burger');
+if (burger2) {
+  burger.addEventListener('click', () => {
+    document.getElementById('sidebar_2').classList.toggle('active');
+  });
+}
   });
 
 // Načti ostatní části stránky
