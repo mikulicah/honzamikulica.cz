@@ -150,6 +150,27 @@ h3 {
   font-size: 22px;
 }
 
+h4 {
+  color: rgb(45, 45, 45);
+  font-family: "TWKEverett-Regular", sans-serif;
+  font-size: 20px;
+}
+
+h4 a {
+  color: rgb(45, 45, 45);
+  text-decoration: none;
+  font-family: "TWKEverett-Extrabold", sans-serif;
+  font-size: 20px;
+}
+
+h4 a:hover {
+  color: rgb(130, 130, 130);
+  text-decoration: none;
+  font-family: "TWKEverett-Extrabold", sans-serif;
+  font-size: 20px;
+}
+
+
 p {
   color: rgb(45, 45, 45);
   font-family: 'Calendar_plus', serif;
