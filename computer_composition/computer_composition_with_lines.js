@@ -48,10 +48,7 @@ function handleFile(file) {
 
 function mousePressed() {
   userStartAudio();
-
-  if (useMic && mic) {
-    mic.start();
-  }
+  mic.start();
 }
 
 //zvětšování okna
