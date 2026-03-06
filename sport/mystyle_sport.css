@@ -90,7 +90,7 @@ section.sport {
   color: rgb(130, 130, 130);
 }
 
-.sidebar_2 {
+.sidebar_blog {
   position: fixed;
   top: 60px; /* stejné jako výška headeru */
   left: 0;
@@ -101,12 +101,12 @@ section.sport {
   /*box-shadow: 2px 0 4px rgba(0,0,0,0.05);*/
 }
 
-.sidebar_2 nav ul {
+.sidebar_blog nav ul {
   list-style-type: none;
   padding: 0;  
 }
 
-.sidebar_2 nav ul a {
+.sidebar_blog nav ul a {
   color: rgb(45, 45, 45);
   padding-left:16px;
   text-decoration: none;
@@ -114,7 +114,35 @@ section.sport {
   font-size: 18px;
 }
 
-.sidebar_2 nav ul a:hover {
+.sidebar_blog nav ul a:hover {
+  color: rgb(130, 130, 130);
+}
+
+.sidebar_project {
+  position: fixed;
+  top: 60px; /* stejné jako výška headeru */
+  left: 0;
+  width: 250px; /* pevná šířka */
+  height: calc(100% - 60px); /* zbytek výšky okna */
+  overflow-y: auto;
+  padding: 20px;
+  /*box-shadow: 2px 0 4px rgba(0,0,0,0.05);*/
+}
+
+.sidebar_project nav ul {
+  list-style-type: none;
+  padding: 0;  
+}
+
+.sidebar_project nav ul a {
+  color: rgb(45, 45, 45);
+  padding-left:16px;
+  text-decoration: none;
+  font-family: "TWKEverett-Extrabold", sans-serif;
+  font-size: 18px;
+}
+
+.sidebar_project nav ul a:hover {
   color: rgb(130, 130, 130);
 }
 
@@ -359,14 +387,26 @@ section {
   text-align: center;
   }
 
-.sidebar_2 {
+.sidebar_blog {
   position: static;
   width: 100%;
   height: auto;
   display: none;
   }
 
-.sidebar_2.active {
+.sidebar_blog.active {
+  display: block;
+  text-align: center;
+  }
+
+.sidebar_project {
+  position: static;
+  width: 100%;
+  height: auto;
+  display: none;
+  }
+
+.sidebar_project.active {
   display: block;
   text-align: center;
   }

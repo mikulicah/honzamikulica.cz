@@ -27,10 +27,16 @@ fetch('sidebar.html')
     document.getElementById('sidebar').innerHTML = data;
   });
 
-fetch('sidebar_2.html')
+fetch('sidebar_blog.html')
   .then(res => res.text())
   .then(data => {
-    document.getElementById('sidebar_2').innerHTML = data;
+    document.getElementById('sidebar_blog').innerHTML = data;
+  });
+
+fetch('sidebar_project.html')
+  .then(res => res.text())
+  .then(data => {
+    document.getElementById('sidebar_project').innerHTML = data;
   });
 
 fetch('body.html')
