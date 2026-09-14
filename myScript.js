@@ -32,29 +32,29 @@ fetch('footer.html')
     document.getElementById('footer').innerHTML = data;
   });
 
-  function setLanguage(lang) {
-    localStorage.setItem('preferredLanguage', lang);
-    updateLanguage(lang);
-  }
+function setLanguage(lang) {
+  localStorage.setItem('preferredLanguage', lang);
+  updateLanguage(lang);
+}
 
-  function updateLanguage(lang) {
-    // Skryje všechny jazykové verze
-    document.querySelectorAll('.lang').forEach(el => {
-      el.classList.remove('active');
-    });
-
-    // Zobrazí zvolený jazyk
-    const selected = document.getElementById(lang);
-    if (selected) {
-      selected.classList.add('active');
-    }
-  }
-
-  // Po načtení stránky použij jazyk z localStorage
-  document.addEventListener('DOMContentLoaded', () => {
-    const savedLang = localStorage.getItem('preferredLanguage') || 'cs';
-    updateLanguage(savedLang);
+function updateLanguage(lang) {
+  // Skryje všechny jazykové verze
+  document.querySelectorAll('.lang').forEach(el => {
+    el.classList.remove('active');
   });
+
+  // Zobrazí zvolený jazyk
+  const selected = document.getElementById(lang);
+  if (selected) {
+    selected.classList.add('active');
+  }
+}
+
+// Po načtení stránky použij jazyk z localStorage
+document.addEventListener('DOMContentLoaded', () => {
+  const savedLang = localStorage.getItem('preferredLanguage') || 'cs';
+  updateLanguage(savedLang);
+});
 
 
 

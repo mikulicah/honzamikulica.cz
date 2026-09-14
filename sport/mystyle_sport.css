@@ -13,13 +13,15 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  height: 80px; /* nastav výšku podle potřeby */
+  height: 80px;
+  /* nastav výšku podle potřeby */
   padding: 10px 20px;
   text-align: left;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 1000; /* aby zůstal nad ostatním obsahem */
+  z-index: 1000;
+  /* aby zůstal nad ostatním obsahem */
   /*box-shadow: 0 2px 4px rgba(0,0,0,0.1);*/
 }
 
@@ -64,10 +66,13 @@ section.sport {
 
 .sidebar {
   position: fixed;
-  top: 60px; /* stejné jako výška headeru */
+  top: 60px;
+  /* stejné jako výška headeru */
   left: 0;
-  width: 250px; /* pevná šířka */
-  height: calc(100% - 60px); /* zbytek výšky okna */
+  width: 250px;
+  /* pevná šířka */
+  height: calc(100% - 60px);
+  /* zbytek výšky okna */
   overflow-y: auto;
   padding: 20px;
   /*box-shadow: 2px 0 4px rgba(0,0,0,0.05);*/
@@ -75,12 +80,12 @@ section.sport {
 
 .sidebar nav ul {
   list-style-type: none;
-  padding: 0;  
+  padding: 0;
 }
 
 .sidebar nav ul a {
   color: rgb(45, 45, 45);
-  padding-left:16px;
+  padding-left: 16px;
   text-decoration: none;
   font-family: "TWKEverett-Extrabold", sans-serif;
   font-size: 18px;
@@ -92,10 +97,13 @@ section.sport {
 
 .sidebar_blog {
   position: fixed;
-  top: 60px; /* stejné jako výška headeru */
+  top: 60px;
+  /* stejné jako výška headeru */
   left: 0;
-  width: 250px; /* pevná šířka */
-  height: calc(100% - 60px); /* zbytek výšky okna */
+  width: 250px;
+  /* pevná šířka */
+  height: calc(100% - 60px);
+  /* zbytek výšky okna */
   overflow-y: auto;
   padding: 20px;
   /*box-shadow: 2px 0 4px rgba(0,0,0,0.05);*/
@@ -103,12 +111,12 @@ section.sport {
 
 .sidebar_blog nav ul {
   list-style-type: none;
-  padding: 0;  
+  padding: 0;
 }
 
 .sidebar_blog nav ul a {
   color: rgb(45, 45, 45);
-  padding-left:16px;
+  padding-left: 16px;
   text-decoration: none;
   font-family: "TWKEverett-Extrabold", sans-serif;
   font-size: 18px;
@@ -120,10 +128,13 @@ section.sport {
 
 .sidebar_project {
   position: fixed;
-  top: 60px; /* stejné jako výška headeru */
+  top: 60px;
+  /* stejné jako výška headeru */
   left: 0;
-  width: 250px; /* pevná šířka */
-  height: calc(100% - 60px); /* zbytek výšky okna */
+  width: 250px;
+  /* pevná šířka */
+  height: calc(100% - 60px);
+  /* zbytek výšky okna */
   overflow-y: auto;
   padding: 20px;
   /*box-shadow: 2px 0 4px rgba(0,0,0,0.05);*/
@@ -131,12 +142,12 @@ section.sport {
 
 .sidebar_project nav ul {
   list-style-type: none;
-  padding: 0;  
+  padding: 0;
 }
 
 .sidebar_project nav ul a {
   color: rgb(45, 45, 45);
-  padding-left:16px;
+  padding-left: 16px;
   text-decoration: none;
   font-family: "TWKEverett-Extrabold", sans-serif;
   font-size: 18px;
@@ -151,7 +162,7 @@ button {
   color: rgb(45, 45, 45);
   font-family: "TWKEverett-Extrabold", sans-serif;
   text-align: justify;
-  padding-left:16px;
+  padding-left: 16px;
   font-size: 18px;
   cursor: pointer;
 }
@@ -171,18 +182,20 @@ button:hover {
 .footer {
   padding: 0px;
   text-align: left;
-  font-family:'Savate', sans-serif;
-  font-weight: 500;  
+  font-family: 'Savate', sans-serif;
+  font-weight: 500;
   font-size: 14px;
-  text-decoration: none;  
+  text-decoration: none;
   color: rgb(45, 45, 45);
   padding: 3px;
   cursor: default;
 }
 
 .body {
-  margin-left: 250px; /* stejné jako šířka sidebaru */
-  margin-top: 60px; /* stejné jako výška headeru */
+  margin-left: 250px;
+  /* stejné jako šířka sidebaru */
+  margin-top: 60px;
+  /* stejné jako výška headeru */
   padding: 20px;
   flex: 1;
 }
@@ -214,14 +227,14 @@ p {
   width: 90%;
 }
 
-p a{
+p a {
   color: rgb(45, 45, 45);
   text-decoration: none;
   font-family: 'Calendar_plus', serif;
   font-weight: 600;
 }
 
-p a:hover{
+p a:hover {
   color: rgb(130, 130, 130);
   text-decoration: none;
   font-family: 'Calendar_plus', serif;
@@ -229,7 +242,7 @@ p a:hover{
 
 p.Familyforall {
   color: black;
-  font-family:'Courier New', Courier, monospace;
+  font-family: 'Courier New', Courier, monospace;
   font-weight: 200;
   font-style: normal;
   font-size: 14px;
@@ -240,22 +253,22 @@ p.Familyforall {
 #hp2 {
   max-width: 250px;
   width: 100%;
-  height:auto;
-  float: right;    
+  height: auto;
+  float: right;
   margin: 0px 50px 0px 50px;
   padding: 0px 50px 25px 50px;
   /*
   width: 9%;
   float: right;    
   margin: 0 150px 30px 150px;*/
-  }
+}
 
 #hp3 {
   width: 30%;
   border: 1px solid #3c3c3c;
-  }
+}
 
-abbr{
+abbr {
   text-decoration: none;
 }
 
@@ -269,8 +282,8 @@ abbr{
 .bio-image {
   max-width: 400px;
   width: 100%;
-  height:auto;
-  float: right;    
+  height: auto;
+  float: right;
   margin: 0px 50px 0px 50px;
   padding: 0px 50px 25px 50px;
 }
@@ -284,7 +297,8 @@ abbr{
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 30px; /* mezera mezi ikonami */
+  gap: 30px;
+  /* mezera mezi ikonami */
   margin: 30px 0;
 }
 
@@ -295,8 +309,8 @@ abbr{
 }
 
 iframe {
-    aspect-ratio: 16 / 9;
-    width: 50% !important;
+  aspect-ratio: 16 / 9;
+  width: 50% !important;
 }
 
 .burger {
@@ -308,12 +322,12 @@ iframe {
 }
 
 
-.lang { 
-  display: none; 
+.lang {
+  display: none;
 }
 
-.lang.active { 
-  display: block; 
+.lang.active {
+  display: block;
 }
 
 
@@ -323,7 +337,7 @@ iframe {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.9);
+  background: rgba(0, 0, 0, 0.9);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -338,93 +352,107 @@ iframe {
   max-width: 90%;
   max-height: 80%;
 }
-#close, #prev, #next {
+
+#close,
+#prev,
+#next {
   position: absolute;
   color: white;
   font-size: 2em;
   cursor: pointer;
   user-select: none;
-  background-color: rgba(0,0,0,0.2); /* tmavý průhledný podklad */
+  background-color: rgba(0, 0, 0, 0.2);
+  /* tmavý průhledný podklad */
   padding: 5px 5px;
   border-radius: 15%;
 }
+
 #close {
   top: 20px;
   right: 30px;
 }
-#prev, #next {
+
+#prev,
+#next {
   top: 50%;
   transform: translateY(-50%);
 }
-#prev { left: 5px; }
-#next { right: 5px; }
+
+#prev {
+  left: 5px;
+}
+
+#next {
+  right: 5px;
+}
 
 @media (max-width: 600px) {
-section {
-  flex-direction: column;
+  section {
+    flex-direction: column;
   }
 
-.header {
-  position: static;
-  justify-content: center;
-  }
-.burger {
-  display: block;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  .header {
+    position: static;
+    justify-content: center;
   }
 
-.sidebar {
-  position: static;
-  width: 100%;
-  height: auto;
-  display: none;
+  .burger {
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
-.sidebar.active {
-  display: block;
-  text-align: center;
+  .sidebar {
+    position: static;
+    width: 100%;
+    height: auto;
+    display: none;
   }
 
-.sidebar_blog {
-  position: static;
-  width: 100%;
-  height: auto;
-  display: none;
+  .sidebar.active {
+    display: block;
+    text-align: center;
   }
 
-.sidebar_blog.active {
-  display: block;
-  text-align: center;
+  .sidebar_blog {
+    position: static;
+    width: 100%;
+    height: auto;
+    display: none;
   }
 
-.sidebar_project {
-  position: static;
-  width: 100%;
-  height: auto;
-  display: none;
+  .sidebar_blog.active {
+    display: block;
+    text-align: center;
   }
 
-.sidebar_project.active {
-  display: block;
-  text-align: center;
+  .sidebar_project {
+    position: static;
+    width: 100%;
+    height: auto;
+    display: none;
   }
 
-.body {
-  margin: 0px 20px 20px 20px;
-  padding: 60px 0px 0px 0px;
-  text-align: center
+  .sidebar_project.active {
+    display: block;
+    text-align: center;
   }
 
-.footer {
-  text-align: center;
-}
+  .body {
+    margin: 0px 20px 20px 20px;
+    padding: 60px 0px 0px 0px;
+    text-align: center
+  }
 
-p {
-  padding: 0px 0px 0px 30px;
-  text-align: justify;
-  width: 90%;
-}
+  .footer {
+    text-align: center;
+  }
+
+  p {
+    padding: 0px 0px 0px 30px;
+    text-align: justify;
+    width: 90%;
+  }
 
 }
